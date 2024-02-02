@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you message</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+  .post-appoint-card {
+    background-color: #98FB98;
+    width: 700px;
+  }
+  .card {
+    border: none;
+    height: 288.8px;
+    width: 365px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .table td {
+    padding: 0.5rem 1rem;
+    border-top: none;
+  }
+
+  .qr-image {
+    margin-left: 60px;
+    height: 200px;
+  }
+  
+</style>
+<body>
+    <div class="container" style="width: 800px;">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Appointment Schedule</h5>
+              <table class="table">
+                <tr>
+                  <td>First Name:</td>
+                  <td><%=firstName%></td>
+                </tr>
+                <tr>
+                  <td>Last Name:</td>
+                  <td><%=lastName%></td>
+                </tr>
+                <tr>
+                  <td>Gender:</td>
+                  <td><%=gender%></td>
+                </tr>
+                <tr>
+                  <td>Blood Group:</td>
+                  <td><%=bloodGroup%></td>
+                </tr>
+                <tr>
+                  <td>Appointment Date:</td>
+                  <td><%=appointmentDate%></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">QR Code</h5>
+              <img class="qr-image" src="url_img.png" alt="QR Code Image">
+            </div>
+          </div>
+        </div>
+          
+        </div>
+        <footer class="footer-author">
+          <p>Made by Rishav</p>
+        </footer>
+      </div>
+    </div>
+    <img src="health-backg.png" alt="Bottom Image" class="bottom-image">
+</body>
+
+</html>

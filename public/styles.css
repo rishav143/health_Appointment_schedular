@@ -1,0 +1,46 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set the body height to 100% of the viewport height */
+}
+.bottom-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0; /* Set a lower z-index to place the image below the content layer */
+}
+.container{
+    position: relative;
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #98FB98;
+    border-top: 4mm ridge rgba(211, 220, 50, .6);
+    opacity: 0.75;
+    border-radius: 3%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.form-content {
+    padding-top: 15px;
+}
+
+.flex-heading {
+    padding: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+
+@media (max-width: 1000px) {
+    .bottom-image {
+        display: none;
+    }
+}
+.footer-author {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
